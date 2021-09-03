@@ -30,4 +30,11 @@ Since any changes to the file content would result in a completely different fil
 
 ## Important Data
 
-_This section will be updated with the trait table file hash and links to the revealed file._
+Token trait table CSV file hashes:
+
+- SHA-256: `c10deece2b47d6ef460d6deb807e04580b41d73ae9b2c4206ebd136f30bd71e3`
+- SHA-512: `6d77715a63cc302835dd38c0696677bf2aa15b20a120677bba51d3f748f74ba8e6f18170d0633bcc04073f3659d3c7c16979568ffc5d0855e8c33699d81c6ef3`
+
+An Ethereum transaction has been sent from The Sevens contract deployment account committing to these hashes (view `Input Data` as "UTF-8"): [0x6aa63d4d3ad34a7cbc797c7575735fc6ed753f31392723567ca6a8f13f0515d5](https://etherscan.io/tx/0x6aa63d4d3ad34a7cbc797c7575735fc6ed753f31392723567ca6a8f13f0515d5)
+
+_This section will be updated with the links to the revealed file._
