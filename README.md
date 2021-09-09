@@ -40,6 +40,7 @@ An Ethereum transaction has been sent from The Sevens contract deployment accoun
 The trait table file has been published:
 
 - in this repository: [Sevens_Trait_Table.csv](./Sevens_Trait_Table.csv)
+- to IPFS: [QmWTZWUYNJENWUfUr4apjcRqmrQ7MT2XnQZHsaDrnEcyzN](https://ipfs.io/ipfs/QmWTZWUYNJENWUfUr4apjcRqmrQ7MT2XnQZHsaDrnEcyzN)
 
 ## Verification
 
