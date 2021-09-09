@@ -37,4 +37,42 @@ Token trait table CSV file hashes:
 
 An Ethereum transaction has been sent from The Sevens contract deployment account committing to these hashes (view `Input Data` as "UTF-8"): [0x6aa63d4d3ad34a7cbc797c7575735fc6ed753f31392723567ca6a8f13f0515d5](https://etherscan.io/tx/0x6aa63d4d3ad34a7cbc797c7575735fc6ed753f31392723567ca6a8f13f0515d5)
 
-_This section will be updated with the links to the revealed file._
+The trait table file has been published:
+
+- in this repository: [Sevens_Trait_Table.csv](./Sevens_Trait_Table.csv)
+
+## Verification
+
+Subject to the [caveat](#why-am-i-getting-a-different-hash) mentioned in the FAQ section, you can follow these steps to verify the hashes.
+
+### Linux/MacOS
+
+_Note that on MacOS you'll need to install `coreutils` first for this to work._
+
+```
+$ sha256sum ./Sevens_Trait_Table.csv
+c10deece2b47d6ef460d6deb807e04580b41d73ae9b2c4206ebd136f30bd71e3  ./Sevens_Trait_Table.csv
+$ sha512sum ./Sevens_Trait_Table.csv
+6d77715a63cc302835dd38c0696677bf2aa15b20a120677bba51d3f748f74ba8e6f18170d0633bcc04073f3659d3c7c16979568ffc5d0855e8c33699d81c6ef3  ./Sevens_Trait_Table.csv
+```
+
+### Windows
+
+```
+$ CertUtil -hashfile .\Sevens_Trait_Table.csv SHA256
+SHA256 hash of .\Sevens_Trait_Table.csv:
+c10deece2b47d6ef460d6deb807e04580b41d73ae9b2c4206ebd136f30bd71e3
+CertUtil: -hashfile command completed successfully.
+$ CertUtil -hashfile .\Sevens_Trait_Table.csv SHA512
+SHA512 hash of .\Sevens_Trait_Table.csv:
+6d77715a63cc302835dd38c0696677bf2aa15b20a120677bba51d3f748f74ba8e6f18170d0633bcc04073f3659d3c7c16979568ffc5d0855e8c33699d81c6ef3
+CertUtil: -hashfile command completed successfully.
+```
+
+## FAQs
+
+### Why am I getting a different hash?
+
+Since CSV files are really just plain text, Git automatically changes line endings for them based on what platform you're on. Since the CSV file was generated on Linux, when cloning this repository on Windows, Git changes the file and results in a different file hash.
+
+If you're on Windows, instead of cloning the repository, you can use the "Download ZIP" function of GitHub to obtain a copy of the CSV table. From there you'll get the correct hashes.
